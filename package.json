@@ -1,0 +1,17 @@
+{
+    "name": "edgar-dashboard",
+    "version": "1.0.0",
+    "description": "Dashboard application with data aggregation from multiple sources",
+    "main": "index.js",
+    "scripts": {
+        "install:all": "npm --prefix server i && npm --prefix client i",
+        "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+        "build": "npm --prefix server run build && npm --prefix client run build",
+        "start": "concurrently \"npm --prefix server start\" \"npm --prefix client start\""
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
